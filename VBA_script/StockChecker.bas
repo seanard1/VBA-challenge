@@ -1,6 +1,10 @@
 Attribute VB_Name = "Module1"
 Sub StockChecker()
 
+    'Sort functions not found in class learned from TrumpExcel.com
+    'Cell Formatting not found in class learned from AutomateExcel.com
+    'Citations below
+
     For Each ws In Worksheets
 
     'Declare variables
@@ -38,6 +42,7 @@ Sub StockChecker()
     ws.Range("L1").Value = "Total Stock Volume"
     
     'Sort in case out of order
+    'Found lesson on TrumpExcel.com https://trumpexcel.com/sort-data-vba/ and adapted to this sheet
     Worksheets(sheetname).Sort.SortFields.Clear
     With Worksheets(sheetname).Sort
         .SortFields.Add Key:=ws.Range("A1"), Order:=xlAscending
@@ -90,6 +95,7 @@ Sub StockChecker()
     Next i
     
     'Format columns J to L
+    'Found on AutomateExcel.com lesson https://www.automateexcel.com/vba/center-text-alignment/
     ws.Columns("J:L").EntireColumn.AutoFit
     With ws.Range("J:K")
         .VerticalAlignment = Excel.Constants.xlCenter
