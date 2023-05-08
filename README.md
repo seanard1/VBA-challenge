@@ -10,10 +10,15 @@ Subjects not covered in class but researched for this project included:
     1. As a failsafe at the start of the code in case the stock info comes unsorted
     2. As a more elegant solution to find the greatest % increase and decrease rather than a brute force loop
     3. As the way to find the largest volume, as well
+
 The sorting with function was learned from the website TrumpExcel.com // https://trumpexcel.com/sort-data-vba/
+
 - Formatting: I used to change the width of the cells and center some of the text for readability
+
 This was leanred from the website AutomateExcel.com // https://www.automateexcel.com/vba/center-text-alignment/
+
 - Accent Styles for background
+
 This was learned by recording a Macro, manually changing the cell background colour to the lighter shades of red/green and then reading the script in VBA for the Macro recorded.
 
 
