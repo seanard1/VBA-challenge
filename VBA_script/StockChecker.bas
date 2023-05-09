@@ -70,9 +70,11 @@ Sub StockChecker()
                 
                 If ws.Cells(tickercount + 1, 10).Value > 0 Then
                     ws.Cells(tickercount + 1, 10).Style = "40% - Accent3"
+                    ws.Cells(tickercount + 1, 11).Style = "40% - Accent3"
                     
                 ElseIf ws.Cells(tickercount + 1, 10).Value < 0 Then
                     ws.Cells(tickercount + 1, 10).Style = "40% - Accent2"
+                    ws.Cells(tickercount + 1, 11).Style = "40% - Accent2"
                 End If
         
             'percentage change with if to avoid DIV/0 error
