@@ -3,6 +3,7 @@ Module 2 challenge project to read and parse Stock Ticker through VBA
 
 # Notes
 - There is a section in Conditional Formatting requirements that may suggest the need to apply colour backgrounds to the "Percent Change" column, but that is not shown in the provided screenshots. It could be a reference to the % formatting. I chose to follow the screenshots and assume the reference to formatting meant percent style. The **bolded** code below is what I would add for the second conditional row.
+
 If ws.Cells(tickercount + 1, 10).Value > 0 Then
     ws.Cells(tickercount + 1, 10).Style = "40% - Accent3"
     **ws.Cells(tickercount + 1, 11).Style = "40% - Accent3"**
